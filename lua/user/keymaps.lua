@@ -69,3 +69,11 @@ keymap("x", "<A-k>", ":move '<-2<CR>gv-gv", opts)
 
 -- Nvimtree
 keymap("n", "<leader>e", ":NvimTreeToggle<cr>", opts)
+
+-- dap
+keymap("n","<F5>","<Cmd>lua require'dap'.continue()<CR>",opts)
+keymap("n","<F8>","<Cmd>lua require'dap'.step_over()<CR>",opts)
+keymap("n","<F7>","<Cmd>lua require'dap'.step_into()<CR>",opts)
+keymap("n","<F9>","<Cmd>lua require'dap'.step_out()<CR>",opts)
+keymap("n","<Leader>b","<Cmd>lua require'dap'.toggle_breakpoint()<CR>",opts)
+
